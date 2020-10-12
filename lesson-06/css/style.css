@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  float: left;
+  margin-left: 10px;
+  max-width:80%;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+main {
+  clear: both;
+}
+
+.topnav-h1 {
+  margin-left: 20px;
+}
+
+.topnav li {
+  list-style: none;
+  line-height: 2rem;
+}
+
+.topnav a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #000;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black
+}
+
+.topnav-right {
+  margin-top: 25px;
+  text-align: right;
+}
+
+ul.topnav-right li {
+ display: block;
+}
+
+.sections-grid {
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+@media screen and (min-width: 800px) {
+  .sections-grid {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  ul.topnav-right {
+    text-align: right;
+  }
+  ul.topnav-right li {
+    display: inline;
+   }
+  .sections-grid {
+    grid-template-columns: auto auto auto;
+  }
+
+}
+
+.section {
+  border: 8px solid #CCC;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.section1, .section2, .section3 {
+  background-color: #B3C7FF;
+}
+
+.section4, .section5, .section6 {
+  background-color: #678FFE;
+}
+
+.section1 {
+  background-image: url('../images/hospital.jpg');
+}
+
+.section2 {
+  background-image: url('../images/hotel.jpg');
+}
+
+.section3 {
+  background-image: url('../images/house-cleaning.jpg');
+}
+
+.section4 {
+  background-image: url('../images/end-of-tenancy.png');
+}
+
+.section5 {
+  background-image: url('../images/oven-cleaning.png');
+}
+
+.section6 {
+  background-image: url('../images/hand-washing.jpg');
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.section h3 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1.75rem;
+}
+
+.section a {
+  text-decoration: none;
+  color: #000;
+}
+
+.section5 a {
+  color: #FFF;
+}
+
+footer p {
+  margin-top: 50px;
+  font-size: .9rem;
+  text-align: center;
+}
