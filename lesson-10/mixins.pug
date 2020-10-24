@@ -1,0 +1,30 @@
+mixin friendCard(friend)
+  .friend
+    .first-name #{friend.firstName}
+    .last-name #{friend.lastName}
+    .mobile #{friend.mobile}
+
+-
+  const friendsList = [
+    {
+      'firstName':'Richard',
+      'lastName':'Stibbard',
+      'mobile': '07816 155467'
+    },
+    {
+      'firstName':'Mike',
+      'lastName': 'McTavish',
+      'mobile': '07432 224667'
+    },
+    {
+      'firstName':'Jenna',
+      'lastName': 'Smith',
+      'mobile': '07156 908762'
+    }
+  ]
+
+
+#friends
+
+  each friend in friendsList
+    +friendCard(friend)
