@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  margin:0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  border-top: 12px solid red;
+  border-bottom: 12px solid red;
+  padding: 20px 0;
+  background-color:black;
+  color: white;
+}
+
+.navbar__li {
+  display: inline;
+  padding: 0 20px;
+  font-size: 2rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+#gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.car {
+  width: 500px;
+  margin: 10px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #ccc;
+}
+
+.car__name {
+  font-size: 1.5rem;
+}
+
+.car__price {
+  font-size: 1.1rem;
+}
+
+footer {
+  font-size: 0.9rem;
+  margin-bottom: 100px;
+}
