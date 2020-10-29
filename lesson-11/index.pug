@@ -1,53 +1,11 @@
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    link(rel="stylesheet", href="css/style.css")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Lovely Cars of Yesteryear
-  body
-    h1 Lovely Cars of Yesteryear
+extends templates/layout
 
-    nav.navbar
-      ul
-        li.navbar__li
-          a(href="#") 1
-        li.navbar__li
-          a(href="#") 2
-        li.navbar__li
-          a(href="#") 3
-        li.navbar__li
-          a(href="#") 4
-        li.navbar__li
-          a(href="#") 5
-        li.navbar__li
-          a(href="#") &gt;&gt;
+block main
+  #gallery
 
-    #gallery
-
-      .car
-        img(
-          src="images/001.jpg", 
-          alt="Austin Healey")
-        p.car__name Austin Healey
-        p.car__price $25,000
-
-    nav.navbar
-      ul
-        li.navbar__li
-          a(href="#") 1
-        li.navbar__li
-          a(href="#") 2
-        li.navbar__li
-          a(href="#") 3
-        li.navbar__li
-          a(href="#") 4
-        li.navbar__li
-          a(href="#") 5
-        li.navbar__li
-          a(href="#") &gt;&gt;
-
-    footer
-      hr
-      p &copy; Lovely Cars of Yesteryear  
-
+    .car
+      img(
+        src="images/001.jpg", 
+        alt="Austin Healey")
+      p.car__name Austin Healey
+      p.car__price $25,000
