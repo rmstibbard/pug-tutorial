@@ -1,0 +1,11 @@
+mixin pagination(page)
+  li.navbar__li
+    a(href="#") #{page}
+
+mixin car(name, image, price)
+  .car
+    img(
+    src=`images/${image}.jpg`, 
+    alt=`${name}`)
+    p.car__name #{name}
+    p.car__price #{price}

@@ -3,9 +3,6 @@ extends templates/layout
 block main
   #gallery
 
-    .car
-      img(
-        src="images/001.jpg", 
-        alt="Austin Healey")
-      p.car__name Austin Healey
-      p.car__price $25,000
+    each car in carsList
+      +car(car.name, car.image, car.price)
+
